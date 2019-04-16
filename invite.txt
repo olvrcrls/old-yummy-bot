@@ -1,0 +1,1 @@
+https://discordapp.com/api/oauth2/authorize?client_id=456334689196834838&permissions=8&redirect_uri=https%3A%2F%2Fdiscordapp.com%2Foauth2%2Fauthorize%3Fclient_id%3D456334689196834838%26scope%3Dbot&response_type=code&scope=bot%20identify%20guilds%20guilds.join%20rpc.notifications.read%20messages.read%20connections
