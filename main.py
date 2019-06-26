@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import discord, asyncio, random, requests, json, time, os, subprocess, sys, traceback, threading
 import pytz
 from pytz import timezone 
