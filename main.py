@@ -39,7 +39,7 @@ network_bot_channel = "532477151035916299" # creative's event time server
 def setInterval(func, time):
   e = threading.Event()
   while not e.wait(time):
-    function()
+    func()
 
 def toggleInterval():
   interval = not interval
