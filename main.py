@@ -41,7 +41,7 @@ def setInterval(func, time):
   while not e.wait(time):
     func()
 
-def toggleInterval():
+def toggleInterval(interval):
   interval = not interval
 
 @bot.event
@@ -353,14 +353,14 @@ async def on_member_update(before, after):
              for channel in server.channels:
                  if (channel.id == chat_channel and not interval):
                      await bot.send_message(channel, "```STREAM ALERT:```\n**%s** is streaming **%s** now at %s\n\n*Don't forget to follow though* :smirk:" % (member.name, game.name, game.url))
-                     setInterval(toggleInterval, timeInterval)
+                     setInterval(toggleInterval(interval), timeInterval)
                      break
 
          if server.id == elephants:
              for channel in server.channels:
                  if channel.id == elephants_stream and not interval:
                      await bot.send_message(channel, "```STREAM ALERT:```\n**%s** is streaming **%s** now at %s\n\n*Don't forget to follow and add to your friends server!* :wink:" % (member.name, game.name, game.url))
-                     setInterval(toggleInterval, timeInterval)
+                     setInterval(toggleInterval(interval), timeInterval)
                      break
 
 init_extensions = ["misc", "member", "familyfriendly"]
