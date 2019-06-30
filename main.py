@@ -42,7 +42,7 @@ def setInterval(func, time):
     func()
 
 def toggleInterval():
-  return interval = not interval
+   interval = not interval
 
 @bot.event
 async def on_ready():
