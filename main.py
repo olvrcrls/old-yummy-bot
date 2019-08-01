@@ -352,8 +352,8 @@ async def on_member_update(before, after):
          if server.id == yyd_server:
              for channel in server.channels:
                  if (channel.id == chat_channel and not interval):
-                     await bot.send_message(channel, "```STREAM ALERT:```\n**%s** is streaming **%s** now at %s\n\n*Don't forget to follow though* :smirk:" % (member.name, game.name, game.url))
-                     setInterval(toggleInterval(), timeInterval)
+                    #  await bot.send_message(channel, "```STREAM ALERT:```\n**%s** is streaming **%s** now at %s\n\n*Don't forget to follow though* :smirk:" % (member.name, game.name, game.url))
+                    #  setInterval(toggleInterval(), timeInterval)
                      break
 
          if server.id == elephants:
